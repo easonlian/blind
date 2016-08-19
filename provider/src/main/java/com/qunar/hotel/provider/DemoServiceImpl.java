@@ -17,4 +17,9 @@ public class DemoServiceImpl implements DemoService {
     public String echoBean(Param param) {
         return param == null ? null : param.toString();
     }
+
+    @Override
+    public Param getParam() {
+        return new Param();
+    }
 }

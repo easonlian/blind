@@ -23,6 +23,9 @@ public class ConsumerTest {
         String hello = demoService.sayHello("world"); // 执行远程方法
         String beanStr = demoService.echoBean(new Param());
 
+        Param param = demoService.getParam();
+
+        System.out.println(param);
         System.out.println(hello); // 显示调用结果
         System.out.println(beanStr);
     }

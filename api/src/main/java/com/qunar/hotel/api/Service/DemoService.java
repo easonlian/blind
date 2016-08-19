@@ -10,4 +10,6 @@ public interface DemoService {
     String sayHello(String name);
 
     String echoBean(Param param);
+
+    Param getParam();
 }
